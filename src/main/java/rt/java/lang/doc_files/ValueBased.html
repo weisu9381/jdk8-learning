@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ValueBased Class</title>
+    <style rel="stylesheet">
+        .left,.right {
+            width: 48%;
+            float: left;
+            margin: 1%;
+        }
+    </style>
+</head>
+<body>
+  <div class="left">
+      <h2>Value-based Classes</h2>
+      <p>some classes,such as java.util.Optional and java.time.LocalDateTime, are value-based.</p>
+      <p>Instance of a valued-based class:</p>
+      <ul>
+          <li>are final and immutable (though may contain references to mutable objects);</li>
+          <li>have implementations of equals, hashCode, and toString which are computed solely from the instance's state and not from its identity or the state of any other object or variable;</li>
+          <li>make no use of identity-sensitive operations such as reference equality (==) between instances, identity hash code of instances, or synchronization on an instances's intrinsic lock;</li>
+          <li>are considered equal solely based on equals(), not based on reference equality (==);</li>
+          <li>do not have accessible constructors, but are instead instantiated through factory methods which make no committment as to the identity of returned instances;</li>
+          <li>are freely substitutable when equal, meaning that interchanging any two instances x and y that are equal according to equals() in any computation or method invocation should produce no visible change in behavior.</li>
+      </ul>
+  </div>
+  <div class="right">
+      <h2>Value-based 类</h2>
+      <p>某些类,例如java.util.Optional和java.time.LocalDateTime是value-based类.</p>
+      <p>value-based实例:</p>
+      <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+  </div>
+
+</body>
+</html>
