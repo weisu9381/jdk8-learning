@@ -21,10 +21,11 @@ import java.util.function.Consumer;
  * 对Optional类的实例使用身份敏感的操作(包括引用等式==, 身份哈希码和同步)可能会有不可预知的结果,要尽量避免.
  */
 public class Optional{
-    private static final String[] str = {"123","1234"};
 
     public static void main(String[] args) {
-        String str1 = "1234";
-        str[0] = "1231";
+        final String[] arr1 = {"123"};
+        final String[] arr2 = {"123"};
+        arr1[0] = "abc"; //正确, 这里没改变arr1的引用,而只是改变对象指向的内容
+        final String str1 = "1234";
     }
 }
